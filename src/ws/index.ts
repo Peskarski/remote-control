@@ -19,7 +19,8 @@ const initWebSocket = (port: number) => {
 
       const action = actions.find((a) => a.name === commandName);
 
-      const result = await action?.handler(commandName as CommandNames, args, wsStream);
+      const result = await action?.handler(commandName as CommandNames, args);
+      console.log(result);
       wsStream.write(result);
     });
   });

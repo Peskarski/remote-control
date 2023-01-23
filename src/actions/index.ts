@@ -1,7 +1,9 @@
 import CommandNames from '../constants/commands';
 import mouseMove from './mouseMove';
 import getMousePosition from './mousePosition';
-import drawSquare from './drawSquare';
+import drawRectangle from './drawRectangle';
+import drawCircle from './drawCircle';
+import printScreen from './printScreen';
 
 export const actions = [
   {
@@ -26,6 +28,18 @@ export const actions = [
   },
   {
     name: CommandNames.drawSquare,
-    handler: drawSquare,
+    handler: drawRectangle,
+  },
+  {
+    name: CommandNames.drawRectangle,
+    handler: drawRectangle,
+  },
+  {
+    name: CommandNames.drawCircle,
+    handler: drawCircle,
+  },
+  {
+    name: CommandNames.printScreen,
+    handler: printScreen,
   },
 ];
