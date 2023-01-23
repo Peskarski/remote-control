@@ -12,7 +12,7 @@ const drawRectangle = async (name: CommandNames, args: string[]) => {
   await mouse.drag(left(width));
   await mouse.drag(up(height));
 
-  return name;
+  return `${name} ${width} ${height}`;
 };
 
 export default drawRectangle;

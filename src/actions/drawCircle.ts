@@ -27,7 +27,7 @@ const drawCircle = async (name: CommandNames, args: string[]) => {
 
   await mouse.drag(path);
 
-  return name;
+  return `${name} ${radius}`;
 };
 
 export default drawCircle;
