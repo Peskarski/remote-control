@@ -23,7 +23,7 @@ const printScreen = async (): Promise<string> => {
   const imageBuffer = await image.getBufferAsync(Jimp.MIME_PNG);
   const base64Buffer = imageBuffer.toString('base64');
 
-  return `print_scrn ${base64Buffer}`;
+  return `prnt_scrn ${base64Buffer}`;
 };
 
 export default printScreen;
